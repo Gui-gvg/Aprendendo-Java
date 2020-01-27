@@ -1,0 +1,17 @@
+#campos obrigatórios
+#define a url do banco
+spring.datasource.url = jdbc:mysql://localhost:3306/sistemaalunos
+#define o usuario
+spring.datasource.username = root
+spring.datasource.password = admin
+#define o dialeto
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+#campos opcionais
+#mostra as instruções automaticas do SQL
+spring.jpa.show_sql = true
+#testa enquanto o banco está inativo
+spring.datasource.testWhileIdle = true
+#testa a conexão
+spring.datasource.validationQuery = SELECT 1
+#atualiza/cria as tabelas caso não existam na base
+sprint.jpa.hibernate.ddl-auto = update
